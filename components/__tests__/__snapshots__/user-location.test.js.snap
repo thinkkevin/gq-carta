@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test user-location components verify CurrentLocation Component will use UserLocation first 1`] = `"<div>Current Location(37.5751118299, -122.0408938)</div>"`;
+
+exports[`Test user-location components verify IPLocation using result from useIPLocation 1`] = `"<div>Fremont, CA(37.55649948120117, -121.97046661376953)</div>"`;
+
+exports[`Test user-location components verify UserLocation Component 1`] = `"<div>Current Location(37.5751118299, -122.0408938)</div>"`;

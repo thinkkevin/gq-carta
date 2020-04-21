@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test VenueList Display validate VenueItem component 1`] = `"<div class=\\"item\\"><div class=\\"name\\"><a href=\\"/v/bt-dim-sum/4e07ae1c14959022c8986dbf\\"><span>B&amp;T Dim sum</span></a></div><div class=\\"address\\">36689 Fremont Blvd, Fremont, CA, United States</div></div>"`;

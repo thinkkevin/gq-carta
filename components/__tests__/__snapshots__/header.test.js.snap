@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header validates the header content using snapshot 1`] = `"<header class=\\"header\\"><a href=\\"/\\"><h1>Home</h1></a><div class=\\"search\\"><input type=\\"text\\" class=\\"input\\" name=\\"term\\" placeholder=\\"Search places\\" value=\\"coffee\\"/><span class=\\"submit\\">⚲</span><div class=\\"location\\">near <em></em></div></div></header>"`;

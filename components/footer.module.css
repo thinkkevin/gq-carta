@@ -1,0 +1,9 @@
+.footer {
+  background-color: rgb(204, 234, 243);
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  min-height: 50px;
+  box-sizing: border-box;
+  position: absolute;
+}

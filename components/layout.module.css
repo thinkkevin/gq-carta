@@ -1,0 +1,11 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.body {
+  box-sizing: border-box;
+  padding: 10px 10px 100px 10px;
+  max-width: 900px;
+  margin: auto;
+}

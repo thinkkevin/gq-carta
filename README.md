@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -12,19 +12,25 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Test coverage
 
-## Learn More
+```bash
+npm test -- --coverage
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Key points
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- It might be a bit different from what assignment asks for, it allows to search local places using keyword.
+- User position is asked on page loading. If user denies the request, it will fallback to use an IP lookup service to get current user's location. TODO: Need more work to allow change the location.
+- It's very simple SPA contains three pages: home, search and category.
+- Search bar is in placed in header which is part of a global layout. Changes in search bar will result in URL change as well as search result change. Debounce is used to avoid unnecessary API requests.
+- User input as well as URL query parameter is sanitized from XSS attack.
+- An venue API is hosted on server side to proxy FourSqaure api call, so we do't leak credential to front end.
+- Most of components under components/ have unit test using jest/enzyme with mocks
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+## Folder Structures
 
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- components - most function components and libraries.
+- containers - wrapper component with logic to load venue data
+- pages - a few page level component following Next.js conventions
+- pages/api - venue api under /api/venues

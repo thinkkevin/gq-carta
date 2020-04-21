@@ -1,0 +1,23 @@
+.list {
+  background-color: #eee;
+}
+
+.item {
+  border: 0 solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.item:last-child {
+  border-bottom-width: 1px;
+}
+
+.item em {
+  font-weight: 400;
+}

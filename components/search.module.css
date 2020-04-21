@@ -1,0 +1,44 @@
+.search {
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  display: block;
+}
+.input {
+  font-size: 20px;
+  color: #333;
+  padding: 0 50px 0 15px;
+  font-weight: 500;
+  line-height: 44px;
+  border-radius: 1em;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-width: 1px;
+  border-color: rgb(72, 154, 233);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  font-size: 32px;
+  font-weight: bold;
+
+  text-align: center;
+  content: "&#x1F50D;";
+}
+
+.location {
+  font-size: 14px;
+  padding: 10px 5px 10px 15px;
+}
+
+.location em {
+  font-weight: 700;
+}
