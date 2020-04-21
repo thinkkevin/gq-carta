@@ -8,9 +8,7 @@ const FS_SEC = process.env.FS_SEC;
 
 export default (req, res) => {
   res.statusCode = 200;
-  var ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
-  console.log("ip address", ip);
-  let { term, category, ll } = req.query;
+  let { term, category, ll = "37.7927728,-122.409847" } = req.query;
   let url =
     "https://api.foursquare.com/v2/venues/search?" +
     qs.stringify({
